@@ -1,113 +1,13 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Consulting HTML-5 Template </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php get_header(); ?>
 
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-       
-
-        <?php wp_head();?>
-
-	
-   </head>
-
-   <body>
-       
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Preloader Start -->
-
-    <header>
-        <!-- Header Start -->
-       <div class="header-area">
-            <div class="main-header ">
-                <div class="header-top top-bg d-none d-lg-block">
-                   <div class="container">
-                       <div class="col-xl-12">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="header-info-left">
-                                    <ul>     
-                                        <li><i class="fas fa-map-marker-alt"></i>65/A, 17th floor, Kings land, New York</li>
-                                        <li><i class="fas fa-envelope"></i>info@consulting.com</li>
-                                    </ul>
-                                </div>
-                                <div class="header-info-right">
-                                    <ul class="header-social">    
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                       <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                       </div>
-                   </div>
-                </div>
-               <div class="header-bottom  header-sticky">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-1 col-md-1">
-                                <div class="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10 col-md-10">
-                                <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav> 
-                                        <ul id="navigation">             
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="cases.html">Cases</a>
-                                                <ul class="submenu">
-                                                    <li><a href="single-case.html">Case Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-       </div>
-        <!-- Header End -->
-    </header>
-
-    <main>
 
         <!-- slider Area Start-->
-        <div class="slider-area ">
+        <main>
+
+         
             <!-- Mobile Menu -->
             <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" style="background-image:url('assets/img/slider/slide-1.jpg')">
+                <div class="single-slider slider-height d-flex align-items-center" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/img/slider/slide-1.jpg')">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-10 mx-auto">
@@ -123,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center" style="background-image:url('assets/img/slider/slide-2.jpg')">
+                <div class="single-slider slider-height d-flex align-items-center" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/img/slider/slide-2.jpg')">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-10 mx-auto">
@@ -149,7 +49,7 @@
                 <div class="row d-flex align-items-end">
                     <div class="col-xl-7 col-lg-7">
                         <div class="trusted-img">
-                            <img src="assets/img/team/wetrusted.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/team/wetrusted.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
@@ -180,7 +80,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-services text-center">
                             <div class="services-icon">
-                                <img src="assets/img/recent/rcent_1.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_1.png" alt="">
                             </div>
                             <div class="services-caption">
                                 <h4>Strategic Planning</h4>
@@ -191,7 +91,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-services text-center">
                             <div class="services-icon">
-                                <img src="assets/img/recent/rcent_2.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_2.png" alt="">
                             </div>
                             <div class="services-caption">
                                 <h4>Trades & stocks</h4>
@@ -202,7 +102,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-services text-center">
                             <div class="services-icon">
-                                <img src="assets/img/recent/rcent_3.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_3.png" alt="">
                             </div>
                             <div class="services-caption">
                                 <h4>Audit & Assurance</h4>
@@ -213,7 +113,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-services text-center">
                             <div class="services-icon">
-                                <img src="assets/img/recent/rcent_2.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_2.png" alt="">
                             </div>
                             <div class="services-caption">
                                 <h4>Audit & Assurance</h4>
@@ -224,7 +124,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-services text-center">
                             <div class="services-icon">
-                                <img src="assets/img/recent/rcent_1.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_1.png" alt="">
                             </div>
                             <div class="services-caption">
                                 <h4>Audit & Assurance</h4>
@@ -235,7 +135,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-services text-center">
                             <div class="services-icon">
-                                <img src="assets/img/recent/rcent_3.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_3.png" alt="">
                             </div>
                             <div class="services-caption">
                                 <h4>Audit & Assurance</h4>
@@ -283,7 +183,7 @@
                     <div class="col-xl-8 col-lg-8 col-md-col-md-7">
                         <div class=" completed-active owl-carousel"> 
                             <div class="single-cases-img">
-                                <img src="assets/img/service/completed_case_1.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/service/completed_case_1.png" alt="">
                                 <!-- img hover caption -->
                                <div class="single-cases-cap">
                                     <h4><a href="case_details.html">Marketing Strategy</a></h4>
@@ -292,7 +192,7 @@
                                </div>
                             </div>
                             <div class="single-cases-img">
-                                <img src="assets/img/service/completed_case_2.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/service/completed_case_2.png" alt="">
                                 <!-- img hover caption -->
                                <div class="single-cases-cap">
                                    <h4><a href="case_details.html">Marketing Strategy</a></h4>
@@ -325,7 +225,7 @@
                             <!-- Front -->
                             <div class="single-profile-front">
                                 <div class="profile-img">
-                                    <img src="assets/img/team/team-1.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/team/team-1.jpg" alt="">
                                 </div>
                                 <div class="profile-caption">
                                     <h4>John Doe <span>Web Developer</span></h4>
@@ -338,7 +238,7 @@
                             <!-- Front -->
                             <div class="single-profile-front">
                                 <div class="profile-img">
-                                    <img src="assets/img/team/team-2.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/team/team-2.jpg" alt="">
                                 </div>
                                 <div class="profile-caption">
                                     <h4>John Doe <span>Web Developer</span></h4>
@@ -351,7 +251,7 @@
                             <!-- Front -->
                             <div class="single-profile-front">
                                 <div class="profile-img">
-                                    <img src="assets/img/team/team-3.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/team/team-3.jpg" alt="">
                                 </div>
                                 <div class="profile-caption">
                                     <h4>John Doe <span>Web Developer</span></h4>
@@ -364,7 +264,7 @@
                             <!-- Front -->
                             <div class="single-profile-front">
                                 <div class="profile-img">
-                                    <img src="assets/img/team/team-2.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/team/team-2.jpg" alt="">
                                 </div>
                                 <div class="profile-caption">
                                     <h4>John Doe <span>Web Developer</span></h4>
@@ -387,7 +287,7 @@
                             <div class="single-testimonial pt-65">
                                 <!-- Testimonial tittle -->
                                 <div class="testimonial-icon mb-45">
-                                    <img src="assets/img/logo/testimonial.png" class="ani-btn " alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/logo/testimonial.png" class="ani-btn " alt="">
                                 </div>
                                  <!-- Testimonial Content -->
                                 <div class="testimonial-caption text-center">
@@ -411,7 +311,7 @@
                             <div class="single-testimonial pt-65">
                                 <!-- Testimonial tittle -->
                                 <div class="testimonial-icon mb-45">
-                                    <img src="assets/img/logo/testimonial.png"  class="ani-btn" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/logo/testimonial.png"  class="ani-btn" alt="">
                                 </div>
                                  <!-- Testimonial Content -->
                                 <div class="testimonial-caption text-center">
@@ -453,7 +353,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-recent-cap mb-30">
                             <div class="recent-img">
-                                <img src="assets/img/recent/rcent_1.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_1.png" alt="">
                             </div>
                             <div class="recent-cap">
                                 <span>Business planing</span>
@@ -465,7 +365,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-recent-cap mb-30">
                             <div class="recent-img">
-                                <img src="assets/img/recent/rcent_2.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_2.png" alt="">
                             </div>
                             <div class="recent-cap">
                                 <span>Audit</span>
@@ -477,7 +377,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-recent-cap mb-30">
                             <div class="recent-img">
-                                <img src="assets/img/recent/rcent_3.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/recent/rcent_3.png" alt="">
                             </div>
                             <div class="recent-cap">
                                 <span>Business planing</span>
@@ -494,96 +394,4 @@
         
 
     </main>
-   <footer>
-       <!-- Footer Start-->
-       <div class="footer-area footer-padding">
-           <div class="container">
-               <div class="row d-flex justify-content-between">
-                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                      <div class="single-footer-caption mb-50">
-                        <div class="single-footer-caption mb-30">
-                             <!-- logo -->
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                            </div>
-                            <div class="footer-tittle">
-                                <div class="footer-pera">
-                                    <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
-                               </div>
-                            </div>
-                            <!-- social -->
-                            <div class="footer-social">
-                                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                            </div>
-                        </div>
-                      </div>
-                   </div>
-                   <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
-                       <div class="single-footer-caption mb-50">
-                           <div class="footer-tittle">
-                               <h4>Company</h4>
-                               <ul>
-                                   <li><a href="index.html">Home</a></li>
-                                   <li><a href="about.html">About Us</a></li>
-                                   <li><a href="single-blog.html">Services</a></li>
-                                   <li><a href="#">Cases</a></li>
-                                   <li><a href="contact.html">  Contact Us</a></li>
-                               </ul>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-                       <div class="single-footer-caption mb-50">
-                           <div class="footer-tittle">
-                               <h4>Services</h4>
-                               <ul>
-                                   <li><a href="#">Commercial Cleaning</a></li>
-                                   <li><a href="#">Office Cleaning</a></li>
-                                   <li><a href="#">Building Cleaning</a></li>
-                                   <li><a href="#">Floor Cleaning</a></li>
-                                   <li><a href="#">Apartment Cleaning</a></li>
-                               </ul>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                       <div class="single-footer-caption mb-50">
-                           <div class="footer-tittle">
-                               <h4>Get in Touch</h4>
-                               <ul>
-                                <li><a href="#">152-515-6565</a></li>
-                                <li><a href="#"> Demomail@gmail.com</a></li>
-                                <li><a href="#">New Orleans, USA</a></li>
-                            </ul>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <!-- footer-bottom aera -->
-       <div class="footer-bottom-area footer-bg">
-           <div class="container">
-               <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right text-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-           </div>
-       </div>
-       <!-- Footer End-->
-   </footer>
-   
-	
-        <?php wp_footer();?>
-    </body>
-</html>
+<?php  get_footer(); ?>
